@@ -1,0 +1,64 @@
+<template>
+    <section class="mt-4 container">
+      <h3 class="text-center text-danger text-uppercase fw-bold mb-4">
+        Kết quả xổ số hôm nay
+      </h3>
+  
+      <!-- Bộ lọc ngày -->
+      <div class="d-flex justify-content-center mb-4">
+        <input
+          v-model="selectedDate"
+          type="date"
+          class="form-control w-auto"
+          @change="fetchResults"
+        />
+      </div>
+  
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <table v-if="results.length" class="table table-bordered text-center">
+            <thead class="table-danger">
+              <tr>
+                <th>Giải</th>
+                <th>Số Trúng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(prize, index) in results" :key="index">
+                <td class="fw-bold bg-light">{{ prize.name }}</td>
+                <td class="text-danger fw-semibold fs-5">
+                  {{ prize.numbers }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+  
+          <p v-else class="text-center text-muted">Đang tải dữ liệu...</p>
+        </div>
+      </div>
+    </section>
+  </template>
+  
+  <script setup>
+  import { ref, onMounted } from 'vue'
+  
+  const results = ref([])
+  const selectedDate = ref(new Date().toISOString().slice(0, 10)) // Lấy ngày hôm nay
+  
+  // Hàm lấy dữ liệu xổ số theo ngày
+  const fetchResults = async () => {
+    try {
+      const { data } = await useFetch(`https://api.minhngoc.net.vn/ket-qua?date=${selectedDate.value}`)
+      if (data.value && data.value.results) {
+        results.value = data.value.results
+      }
+    } catch (error) {
+      console.error('Lỗi khi lấy dữ liệu:', error)
+    }
+  }
+  
+  // Gọi API khi component được mount
+  onMounted(fetchResults)
+  </script>
+  
+  
