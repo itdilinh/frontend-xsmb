@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "title": "Kết quả xổ số miền Bắc hôm nay",
+      "description": "Cập nhật kết quả xổ số miền Bắc mới nhất.",
+      "image": "/images/lottery1.jpg",
+      "category": "Xổ Số",
+      "content": "Nội dung chi tiết của bài viết về kết quả xổ số miền Bắc hôm nay."
+    },
+    {
+      "id": 2,
+      "title": "Soi cầu miền Trung ngày mai",
+      "description": "Dự đoán kết quả xổ số miền Trung ngày mai.",
+      "image": "/images/lottery2.jpg",
+      "category": "Soi Cầu",
+      "content": "Chi tiết về dự đoán xổ số miền Trung."
+    }
+  ]
+  

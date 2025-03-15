@@ -44,7 +44,6 @@
     <div v-if="!loading && predictions.length === 0" class="alert alert-warning text-center">
       Không có dữ liệu soi cầu.
     </div>
-    <h3 class="mt-4">🗣️ Bình Luận & Thảo Luận</h3>
     <Comments :province="province" />
   </div>
 </template>

@@ -6,7 +6,11 @@ export default defineNuxtConfig({
   build: {
     transpile: ['chart.js', 'vue-chart-3']
   },
-  
+  router: {
+    options: {
+      middleware: ['auth'],
+    },
+  },
   
 })
 

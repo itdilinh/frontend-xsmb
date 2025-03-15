@@ -11,14 +11,15 @@
             <NuxtLink class="nav-link text-white" to="/">Trang chủ</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink class="nav-link text-white" to="/LotteryResults">Kết Quả Xổ Số</NuxtLink>
+            <NuxtLink class="nav-link text-white" to="/lotteryresults">Kết Quả</NuxtLink>
           </li>
           <li class="nav-item">
             <NuxtLink class="nav-link text-white" to="/soi-cau">Soi Cầu</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink class="nav-link text-white" to="/NewsList">Sổ Mơ </NuxtLink>
+            <NuxtLink class="nav-link text-white" to="/tin-tuc">Sổ Mơ</NuxtLink>
           </li>
+          
           <li class="nav-item">
             <NuxtLink class="nav-link text-white" to="/thong-ke">Thống Kê</NuxtLink>
           </li>
