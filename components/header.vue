@@ -11,7 +11,22 @@
             <NuxtLink class="nav-link text-white" to="/">Trang chủ</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink class="nav-link text-white" to="/lotteryresults">Kết Quả</NuxtLink>
+            <NuxtLink class="nav-link text-white" to="/ketqua">Kết Quả</NuxtLink>
+          </li>
+          <li class="nav-item">
+            <NuxtLink class="nav-link text-white" to="/soicauxsmb">SoiCau XSMB</NuxtLink>
+          </li>
+          <li class="nav-item">
+            <NuxtLink class="nav-link text-white" to="/soicauxsmn">SoiCau XSMN</NuxtLink>
+          </li>
+          <li class="nav-item">
+            <NuxtLink class="nav-link text-white" to="/soicauxsmt">SoiCau XSMT</NuxtLink>
+          </li>
+          <li class="nav-item">
+            <NuxtLink class="nav-link text-white" to="/bikip">Bí Kíp</NuxtLink>
+          </li>
+          <li class="nav-item">
+            <NuxtLink class="nav-link text-white" to="/Comments">Phòng Chát</NuxtLink>
           </li>
           <li class="nav-item">
             <NuxtLink class="nav-link text-white" to="/soi-cau">Soi Cầu</NuxtLink>
